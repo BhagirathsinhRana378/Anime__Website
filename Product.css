@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+.nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.nav_links a {
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav_links a:hover {
+  color: #00ffe7;
+}
+
+/* Main Product Section */
+.product-container {
+  text-align: center;
+}
+
+.product-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.product-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* Cards */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #ffffff10;
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00ffe7;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00c2b8;
+}

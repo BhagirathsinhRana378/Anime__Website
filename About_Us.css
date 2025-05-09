@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-decoration: none;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(285deg,
+      rgb(255, 0, 128),
+      #6a00ff,
+      rgb(0, 157, 255));
+  background-size: cover;
+}
+
+/* -------------------------nav-------------------------------- */
+.nav {
+  max-width: 100%;
+  height: 80px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 6px solid transparent;
+  animation: border_effect 7s infinite ease-in-out;
+
+}
+
+.nav_links a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease-out;
+}
+
+.nav_links a:hover {
+  color: rgb(13, 255, 247);
+  transform: scale(1.1);
+
+
+}
+
+.nav_links {
+  display: flex;
+  gap: 50px;
+
+}
+
+@keyframes border_effect {
+  0% {
+    border-color: #b6b6b6;
+  }
+
+  33% {
+    background-color: #ffffff84;
+    border-color: #ffffff;
+  }
+
+  50% {
+    background-color: #222;
+    border-color: #222;
+  }
+
+  66% {
+    border-color: #b7b7b7;
+  }
+
+  100% {
+    border-color: #c3c3c3;
+  }
+}
+
+/* -------------------------nav-------------------------------- */
+
+.parent_div {
+  margin: 5vh 0 0 65px;
+  height: 85vh;
+  width: 85vw;
+  background-color: #003dcc;
+  position: relative;
+  overflow: hidden;
+  /* Keeps child elements contained */
+  border-radius: 12px;
+  /* Optional: adds smooth corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /* Optional: subtle shadow for depth */
+}
+
+.parent_div:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.624);
+}
+
+.div_main {
+  height: 85%;
+  width: 75%;
+  background-color: rgb(255, 255, 255);
+  margin-left: 25px;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+}
+
+.div_main h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+  border-bottom: 2px solid #003dcc;
+  padding-bottom: 0.5rem;
+}
+
+.div_main h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #003dcc;
+
+}
+
+.div_main p {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.div_main ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.div_main li {
+  margin-bottom: 0.5rem;
+}
+
+.div_main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.div_main::-webkit-scrollbar-thumb {
+  background-color: #003dcc;
+  width: 2px;
+  border-radius: 4px;
+}
+
+.div_main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.div_img {
+  height: 60%;
+  width: 35%;
+  background-image: url("My_img.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin-bottom: 35px;
+  margin-right: 30px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.6s ease-out;
+  border-radius: 18px;
+  border: 5px solid transparent;
+
+}
+
+.div_img:hover {
+  animation: border_2_effect 5s infinite ease-in-out;
+  transform: scale(1.07);
+
+}
+
+
+@keyframes border_2_effect {
+  0% {
+    border-color: #004cff;
+  }
+
+  33% {
+
+    border-color: #0800ff;
+  }
+
+  50% {
+    border-color: #ff00b3;
+  }
+
+  66% {
+    border-color: #ff0040;
+  }
+
+  100% {
+    border-color: #004cff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  position: relative;
+  margin-top: 10vh;
+  background-image: linear-gradient(40deg, rgba(0, 234, 255, 0.313),
+      rgba(0, 149, 255, 0.281), rgba(255, 255, 255, 0.478),
+      rgba(255, 255, 255, 0.741)), url("IMG_20250310_232549.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 380px;
+  width: 100%;
+  color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border-top-right-radius: 22px;
+  border-top-left-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer_content {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer_links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer_links a {
+  color: #1c1c1c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer_links a:hover {
+  color: #ff0055;
+}
+
+.footer_social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #1c1c1c;
+}
+
+.footer_social a {
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer_social a:hover {
+  transform: scale(1.2);
+  color: #0077ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+  /* ------------------- */
+  .nav_links a {
+    font-size: 0.9rem;
+  }
+
+  .nav_links {
+    gap: 18px;
+  }
+
+  .nav {
+    height: 10vh;
+  }
+
+  /* ------------------- */
+  .parent_div {
+    margin: 5vh 0 0 10px;
+    height: 100vh;
+    width: 95vw;
+    background-color: #003dcc;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .div_main {
+    height: 70%;
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  .div_img {
+    height: 45%;
+    width: 70%;
+    background-image: url("My_img.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-bottom: 15px;
+    margin-right: 50px;
+    z-index: 1;
+    transition: all 0.6s ease-out;
+    border-radius: 20px;
+    border: 5px solid transparent;
+
+  }
+
+
+  /* ------------------- */
+  .footer {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  .footer_social {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    font-size: 0.7rem;
+    color: #1c1c1c;
+  }
+
+  .footer_links {
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .footer_content {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    max-width: 95vw;
+  }
+}

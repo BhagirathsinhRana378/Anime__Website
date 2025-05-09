@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(285deg, rgb(255, 0, 128), #6a00ff, rgb(0, 157, 255));
+    background-size: cover;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    background-image: url("background.jpg");
+    height: 80px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav_links a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.5s ease-out;
+}
+
+.nav_links a:hover {
+    color: rgb(13, 255, 247);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(55, 253, 233);
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+}
+
+.contact-form .submit-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    /* ------------------- */
+    .nav_links a {
+        font-size: 0.9rem;
+    }
+
+    .nav_links {
+        gap: 18px;
+    }
+
+    .nav {
+        height: 10vh;
+    }
+}

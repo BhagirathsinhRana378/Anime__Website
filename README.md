@@ -14,7 +14,9 @@ The website features popular anime such as:
 - ✅ High-quality images and brief descriptions of each anime  
 - ✅ Fully responsive design (desktop, tablet & mobile)  
 - ✅ Cinematic dark theme for immersive browsing  
-- ✅ Organized sections dedicated to each anime series  
+- ✅ Organized sections dedicated to each anime series
+- ✅ All clickable links
+- ✅ Made with love💌 and passion❤️‍🔥
 
 ---
 
